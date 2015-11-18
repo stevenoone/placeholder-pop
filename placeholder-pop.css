@@ -1,0 +1,28 @@
+
+.withplaceholder {
+    display: inline-block;
+    position: relative;
+}
+
+.withplaceholder input{
+    position: relative;
+}
+    
+.placeholder {
+    display: block;
+    font-size: 11px;
+    color: #999;
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    transition: all .3s ease-in-out;
+    text-align: right;
+    z-index: 5;
+    opacity: 0;
+}
+
+.placeholder.on {
+    transition: all .3s ease-in-out;
+    float: right;
+}
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Placeholder Pop</title>
+
+<link rel="stylesheet" href="placeholder-pop.css">
+
+<style type="text/css">
+
+/*Your own styles go here*/
+
+body {
+    margin: 10px 20px;
+}
+
+body, input {
+    font-family: 'Helvetica Neue', Helvetica, Arial,sans-serif;
+}
+
+input[type="text"] {
+    margin: 10px 16px 10px 0;
+    font-size: 14px;
+    color: #444;
+    border: 1px solid #999;
+    padding: 10px 15px;
+    width: 300px;
+}
+
+input[type="text"].small  {
+    width: 124px;
+}
+
+.withplaceholder.error input[type="text"] {
+    border: 1px solid #dd4b39;
+    color: #dd4b39;
+}
+
+.error .placeholder {
+    color: #dd4b39;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<div class="withplaceholder">
+    <span class="placeholder">$Min</span>
+    <input name="k" type="text" placeholder="$Min" class="small">
+</div>
+<div class="withplaceholder error">
+    <span class="placeholder">$Max</span>
+    <input name="k" type="text" placeholder="$Max" class="small">
+</div>
+<br>
+<div class="withplaceholder">
+    <span class="placeholder">Keywords</span>
+    <input name="k" type="text" placeholder="Search term or other keywords">
+</div> 
+    
+
+<script src="http://code.jquery.com/jquery.js"></script>
+
+<script src="placeholder-pop.js"></script>
+
+</body>
+</html>
